@@ -1,0 +1,5 @@
+# xyz.local-history
+.history/
+
+# Node.js
+node_modules/
