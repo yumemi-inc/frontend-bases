@@ -5,6 +5,9 @@
     }
   ],
   "settings": {
+    "github.copilot.enable": {
+      "*": false,
+    },
     // マークダウンとのデフォルトフォーマッタ
     "[markdown]": {
       "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
