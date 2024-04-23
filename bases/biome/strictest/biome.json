@@ -15,5 +15,9 @@
   "formatter": {
     "indentStyle": "space"
   },
-  "linter": {}
+  "linter": {
+    "rules": {
+      "all": true
+    }
+  }
 }
