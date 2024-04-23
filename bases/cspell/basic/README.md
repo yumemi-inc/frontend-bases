@@ -1,12 +1,12 @@
 # Web フロントエンド向け cspell の基本設定例
 
-ソフトウェア業界と、Web フロントエンドで利用する言語に関連する cspell の辞書を import した設定例です。
+ソフトウェア業界と、Web フロントエンドで利用する言語に関連する CSpell の辞書を import した設定例です。
 
 ## 構成
 
 ```txt
 package.json ... 依存するパッケージを記述
-cspell.jsonc ... JSONC で記述した cspell の設定
+cspell.jsonc ... JSONC で記述した CSpell の設定
 custom_dict.txt ... 案件毎に利用する単語を記載するための辞書
 tests/ ... 検証ファイル
 ```
@@ -34,9 +34,9 @@ tests/ ... 検証ファイル
 
 ## 参考
 
-- [cspell のドキュメント](https://cspell.org/)
-- [cspell の辞書一覧](https://github.com/streetsidesoftware/cspell-dicts)
-- cspell の活用例・紹介記事
+- [CSpell のドキュメント](https://cspell.org/)
+- [CSpell の辞書一覧](https://github.com/streetsidesoftware/cspell-dicts)
+- CSpell の活用例・紹介記事
   - https://qiita.com/Kenta_Kobayashi/items/fcefbc8dc27626a10b83
 
 
