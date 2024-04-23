@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json",
   "version": "0.2",
   "language": "en",
   "import": [
@@ -30,5 +31,6 @@
   // Generally left empty
   "dictionaries": ["custom"],
 
+  // speck check 対象から除外するパスパターン
   "ignorePaths": ["node_modules/**"]
 }
