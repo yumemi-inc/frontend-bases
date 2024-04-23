@@ -1,5 +1,8 @@
 {
-  "description": "",
+  "description": "Web フロントエンド向けの基本的な辞書を指定した cspell の設定サンプル",
+  "scripts": {
+    "spellcheck": "cspell ."
+  },
   "devDependencies": {
     "@cspell/dict-css": "^4.0.12",
     "@cspell/dict-en-gb": "^4.1.39",
