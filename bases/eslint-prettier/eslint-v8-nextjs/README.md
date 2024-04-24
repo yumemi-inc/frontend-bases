@@ -34,7 +34,7 @@ JavaScript や、TypeScript の言語機能にフォーカスした設定がさ�
 > [!NOTE]
 > 
 > 通常、ESLint の plugin や config に依存するパッケージは、明示的にプロジェクトの package.json の `devDependencies` 等に記述する必要がありますが、
-> `eslint-config-next` では `@rushstack/eslint-patch` を利用し、`eslint-config-next` が依存している以下のパッケージをを利用できるようにしています。
+> `eslint-config-next` では [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch) を[利用し](https://github.com/vercel/next.js/blob/canary/packages/eslint-config-next/index.js#L52)、`eslint-config-next` が依存している以下のパッケージを明示的にインストールせずに利用できるようしています。
 > 
 > - [@next/eslint-plugin-next](https://www.npmjs.com/package/@next/eslint-plugin-next)
 > - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
