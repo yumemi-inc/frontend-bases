@@ -1,3 +1,4 @@
+// このファイルは、`next lint` で生成されたものです
 /// <reference types="next" />
 /// <reference types="next/image-types/global" />
 
