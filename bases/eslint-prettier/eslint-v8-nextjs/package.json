@@ -10,8 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "// 以下は `next lint` 実行時に自動挿入されたもの": "",
     "@types/node": "20.12.7",
     "@types/react": "18.2.79",
+
+    "// 以下がコンフィグを利用するのに必要なパッケージ": "",
     "@typescript-eslint/eslint-plugin": "^7.7.1",
     "@typescript-eslint/parser": "^7.7.1",
     "eslint-config-next": "^14.2.2",
