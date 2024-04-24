@@ -60,6 +60,6 @@ JSX の `className` の順序を強制するために [prettier-plugin-tailwindc
 ## 参考
 
 - [Next.js の ESLint](https://nextjs.org/docs/pages/building-your-application/configuring/eslint)
-- [typescript-eslint の Legacy ESLint Setup](https://typescript-eslint.io/getting-started/legacy-eslint-setup)
+- [`typescript-eslint` の Legacy ESLint Setup](https://typescript-eslint.io/getting-started/legacy-eslint-setup)
 - [`eslint-config-next` の実装](https://github.com/vercel/next.js/blob/canary/packages/eslint-config-next/index.js)
 
