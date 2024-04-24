@@ -1,4 +1,5 @@
 {
+  // この tsconfig.json は、`pnpm create next-app` 実行時に生成されたものになります。
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
