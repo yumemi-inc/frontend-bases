@@ -1,14 +1,7 @@
 {
-  "name": "eslint-v8-nextjs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "lint": "pnpx next@14 lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "// 以下は `next lint` 実行時に自動挿入されたもの": "",
     "@types/node": "20.12.7",
