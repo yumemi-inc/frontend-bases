@@ -31,25 +31,25 @@ JavaScript や、TypeScript の言語機能にフォーカスした設定がさ�
 
 また、`eslint-plugin-import` の `import/order` rule を設定し、モジュールのインポート順序が揃うようにしています。
 
-#### 補足
-
-通常、ESLint の plugin や config に依存するパッケージは、明示的にプロジェクトの package.json の `devDependencies` 等に記述する必要がありますが、
-`eslint-config-next` では `@rushstack/eslint-patch` を利用し、`eslint-config-next` が依存している以下のパッケージをを利用できるようにしています。
-
-- @next/eslint-plugin-next
-- eslint-plugin-import
-- eslint-plugin-jsx-a11y
-- eslint-plugin-react
-- eslint-plugin-react-hooks
-- eslint-import-resolver-typescript
-- eslint-import-resolver-node
+> [!NOTE] 補足
+> 
+> 通常、ESLint の plugin や config に依存するパッケージは、明示的にプロジェクトの package.json の `devDependencies` 等に記述する必要がありますが、
+> `eslint-config-next` では `@rushstack/eslint-patch` を利用し、`eslint-config-next` が依存している以下のパッケージをを利用できるようにしています。
+> 
+> - [@next/eslint-plugin-next](https://www.npmjs.com/package/@next/eslint-plugin-next)
+> - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
+> - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
+> - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
+> - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+> - [eslint-import-resolver-node](https://www.npmjs.com/package/eslint-import-resolver-node)
+> - [eslint-import-resolver-typescript](https://www.npmjs.com/package/eslint-import-resolver-typescript)
 
 ### Prettier
 
 [Prettier は EditorConfig の設定サポートしいる]()ため、その他の設定はデフォルトのままにしています。
 
 一点、tailwindcss を利用することを想定し、
-JSX の `className` の順序を強制するために [prettier-plugin-tailwindcss]() を `plugins` に追加しています。
+JSX の `className` の順序を強制するために [prettier-plugin-tailwindcss](https://www.npmjs.com/package/prettier-plugin-tailwindcss) を `plugins` に追加しています。
 
 ## 登録しているコマンド
 
