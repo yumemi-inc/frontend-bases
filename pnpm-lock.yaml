@@ -12,7 +12,7 @@ importers:
         specifier: ^1.7.0
         version: 1.7.0
 
-  bases/cspell/base:
+  bases/cspell/basic:
     devDependencies:
       '@cspell/dict-css':
         specifier: ^4.0.12
