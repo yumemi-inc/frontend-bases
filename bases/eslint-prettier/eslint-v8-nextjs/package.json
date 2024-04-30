@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "lint": "pnpx next@14 lint"
+    "next": "pnpx next@14",
+    "lint": "pnpm next lint",
+    "fix": "pnpm lint --fix && pnpm prettier --write ."
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.7.1",
