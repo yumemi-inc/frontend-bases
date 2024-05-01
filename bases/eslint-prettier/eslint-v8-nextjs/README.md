@@ -46,7 +46,7 @@ JavaScript や、TypeScript の言語機能にフォーカスした設定がさ�
 
 ### Prettier
 
-[Prettier は EditorConfig の設定サポートしいる]()ため、その他の設定はデフォルトのままにしています。
+[Prettier は EditorConfig の設定サポートしいる](https://prettier.io/docs/en/configuration.html#editorconfig)ため、その他の設定はデフォルトのままにしています。
 
 一点、tailwindcss を利用することを想定し、
 JSX の `className` の順序を強制するために [prettier-plugin-tailwindcss](https://www.npmjs.com/package/prettier-plugin-tailwindcss) を `plugins` に追加しています。
