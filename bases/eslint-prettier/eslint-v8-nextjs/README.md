@@ -14,7 +14,7 @@ ESLint v8 を前提とした設定を行う必要があります。
 ```txt
 app/ ... `next lint` を実行するために、必要だったため、こちらに検証用のコードを配置しています
 .eslintrc.cjs ... ESLint 向けの設定です
-.eslintrc.cjs ... Prettier 向けの設定です
+.prettierrc.cjs ... Prettier 向けの設定です
 next-env.d.ts ... `next lint` 実行時に生成されたものです
 package.json ... 必要なパッケージを定義しています
 tsconfig.json ... `pnpm create next-app` 実行時に生成されたものと同じものになります
