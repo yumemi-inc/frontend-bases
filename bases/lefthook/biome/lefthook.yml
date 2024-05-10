@@ -1,0 +1,14 @@
+# <files>の部分は対象としたいディレクトリを指定してください
+# gitでstageされたファイルのみを対象とする場合は{staged_files}を指定してください
+
+pre-commit:
+  commands:
+    fix:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      run: npx biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true <files> && git update-index --again
+
+pre-push:
+  commands:
+    check:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      run: npx biome check --no-errors-on-unmatched --files-ignore-unknown=true <files>
