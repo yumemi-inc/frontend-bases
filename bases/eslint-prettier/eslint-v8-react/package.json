@@ -1,7 +1,9 @@
 {
+  "type": "module",
   "description": "ESLint v8 と Prettier を使用した React 向けの基本的な設定",
   "scripts": {},
   "devDependencies": {
+    "@tsconfig/vite-react": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
     "@typescript-eslint/parser": "^7.8.0",
     "eslint": "^8",
