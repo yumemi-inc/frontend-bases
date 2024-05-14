@@ -4,7 +4,7 @@
 module.exports = {
   root: true,
   /**
-   * 新たに config を追加する場合は、`next/core-web-vitals` よりも前に追加する。
+   * 新たに config を追加する場合は、`prettier` よりも前に追加する。
    */
   extends: [
     "eslint:recommended",
