@@ -36,5 +36,11 @@ module.exports = {
   rules: {
     // import の順序を `["builtin", "external", "parent", "sibling", "index"]` の順序で並び替える
     "import/order": "error",
+
+    // NOTE: React v17 以降は新しい Transformer を利用しているならば、
+    // `import React from 'react'`が不要になるため、以下の2つのルールを `"off"` にしている
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md#when-not-to-use-it
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
   },
 };
