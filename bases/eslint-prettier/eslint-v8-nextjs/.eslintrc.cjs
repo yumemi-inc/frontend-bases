@@ -24,5 +24,10 @@ module.exports = {
   rules: {
     // import の順序を `["builtin", "external", "parent", "sibling", "index"]` の順序で並び替える
     "import/order": "error",
+    // eslint-plugin-import の import/order では1つの import 宣言の中の変数名などはソートしてくれないので、ESLint 本体の sort-imports を使う
+    // see: https://github.com/import-js/eslint-plugin-import/issues/1732#issuecomment-616246894
+    "sort-imports": ["error", {
+      'ignoreDeclarationSort': true,
+    }],
   },
 };
