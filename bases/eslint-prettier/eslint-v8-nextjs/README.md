@@ -55,7 +55,7 @@ JSX の `className` の順序を強制するために [prettier-plugin-tailwindc
 
 |名称|概要|
 |---|---|
-|lint|`pnpx` で `next link` の実行を検証するためのもの (※  案件においては、このような利用は想定していない) |
+|lint|`pnpx` で `next lint` の実行を検証するためのもの (※  案件においては、このような利用は想定していない) |
 
 ## 参考
 
