@@ -25,6 +25,5 @@ yml内の<files>は対象のディレクトリを指定してください（ex. 
 
 ```bash
 npx lefthook install
-pnpm dlx lefthook install  
 bunx lefthook install
 ```
