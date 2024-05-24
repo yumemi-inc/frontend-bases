@@ -1,16 +1,6 @@
 # lefthook
 
-## install
-
-1. CLIをインストールする
-
-```bash
-brew install lefthook
-```
-
-他のOSや環境については、[公式のインストールページ](https://github.com/evilmartians/lefthook/blob/master/docs/install.md#-homebrew-for-macos-and-linux)を参照してください
-
-2. パッケージをインストール
+1. パッケージをインストール
 
 ```bash
 npm i -D lefthook
@@ -34,5 +24,7 @@ yml内の<files>は対象のディレクトリを指定してください（ex. 
 2. git hookに反映
 
 ```bash
-lefthook install
+npx lefthook install
+pnpm dlx lefthook install  
+bunx lefthook install
 ```
