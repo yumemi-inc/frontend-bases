@@ -32,10 +32,10 @@ JavaScript や、TypeScript の言語機能にフォーカスした設定がさ�
 また、`eslint-plugin-import` の `import/order` rule を設定し、モジュールのインポート順序が揃うようにしています。
 
 > [!NOTE]
-> 
+>
 > 通常、ESLint の plugin や config に依存するパッケージは、明示的にプロジェクトの package.json の `devDependencies` 等に記述する必要がありますが、
 > `eslint-config-next` では [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch) を[利用し](https://github.com/vercel/next.js/blob/canary/packages/eslint-config-next/index.js#L52)、`eslint-config-next` が依存している以下のパッケージを明示的にインストールせずに利用できるようしています。
-> 
+>
 > - [@next/eslint-plugin-next](https://www.npmjs.com/package/@next/eslint-plugin-next)
 > - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
 > - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
@@ -53,13 +53,12 @@ JSX の `className` の順序を強制するために [prettier-plugin-tailwindc
 
 ## 登録しているコマンド
 
-|名称|概要|
-|---|---|
-|lint|`pnpx` で `next lint` の実行を検証するためのもの (※  案件においては、このような利用は想定していない) |
+| 名称 | 概要                                                                                                |
+| ---- | --------------------------------------------------------------------------------------------------- |
+| lint | `pnpx` で `next lint` の実行を検証するためのもの (※ 案件においては、このような利用は想定していない) |
 
 ## 参考
 
 - [Next.js の ESLint](https://nextjs.org/docs/pages/building-your-application/configuring/eslint)
 - [`typescript-eslint` の Legacy ESLint Setup](https://typescript-eslint.io/getting-started/legacy-eslint-setup)
 - [`eslint-config-next` の実装](https://github.com/vercel/next.js/blob/canary/packages/eslint-config-next/index.js)
-
