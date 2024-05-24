@@ -1,14 +1,23 @@
 {
+  "type": "module",
   "scripts": {
     "next": "pnpx next@14",
-    "lint": "pnpm next lint",
-    "fix": "pnpm lint --fix && pnpm prettier --write ."
+    "lint:eslint": "pnpm next lint",
+    "lint:prettier": "pnpm prettier --check .",
+    "lint": "concurrently --c 'auto' 'npm:lint:*'",
+    "fix:eslint": "pnpm lint:eslint --fix",
+    "fix:prettier": "pnpm prettier --write .",
+    "fix": "pnpm lint:eslint --fix && pnpm fix:prettier"
   },
   "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/react": "18.3.3",
     "@typescript-eslint/eslint-plugin": "^7.7.1",
     "@typescript-eslint/parser": "^7.7.1",
+    "concurrently": "^8.2.2",
     "eslint-config-next": "^14.2.2",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-tailwindcss": "^3.17.0",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "typescript": "^5.4.5"
