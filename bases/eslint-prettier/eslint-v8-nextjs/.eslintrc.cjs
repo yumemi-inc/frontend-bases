@@ -8,6 +8,7 @@ const config = {
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',
+    'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     // tailwindcss を利用しないプロジェクトでは、以下は削除する
     'plugin:tailwindcss/recommended',
@@ -27,6 +28,10 @@ const config = {
   rules: {
     // import の順序を `["builtin", "external", "parent", "sibling", "index"]` の順序で並び替える
     'import/order': 'error',
+
+    // eslint-plugin-import の import/order では1つの import 宣言の中の変数名などはソートしてくれないので、ESLint 本体の sort-imports を使う
+    // see: https://github.com/import-js/eslint-plugin-import/issues/1732#issuecomment-616246894
+    'sort-imports': ['error', { ignoreDeclarationSort: true }],
   },
 };
 
