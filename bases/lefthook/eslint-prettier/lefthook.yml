@@ -2,13 +2,21 @@
 # gitでstageされたファイルのみを対象とする場合は{staged_files}を指定してください
 
 pre-commit:
+  parallel: true
   commands:
-    fix:
+    eslint:
       glob: '*.{js,jsx,ts,tsx}'
-      run: eslint --fix <files> && prettier --write <files> && git update-index --again
+      run: eslint --fix <files> && git update-index --again
+    prettier:
+      glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
+      run: prettier --write <files> && git update-index --again
 
 pre-push:
+  parallel: true
   commands:
-    check:
+    check-eslint:
       glob: '*.{js,jsx,ts,tsx}'
-      run: eslint <files> && prettier --check <files>
+      run: eslint <files>
+    check-prettier:
+      glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
+      run: prettier --check <files>
