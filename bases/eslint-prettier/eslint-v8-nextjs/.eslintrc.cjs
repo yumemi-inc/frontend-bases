@@ -23,15 +23,28 @@ const config = {
      */
     project: './tsconfig.json',
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'simple-import-sort'],
   root: true,
   rules: {
-    // import の順序を `["builtin", "external", "parent", "sibling", "index"]` の順序で並び替える
-    'import/order': 'error',
+    // `eslint-plugin-import` よりも、広範囲かつ望ましいソートが可能な 
+    // `eslint-plugin-simple-import-sort` で勧められている設定を指定
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
 
-    // eslint-plugin-import の import/order では1つの import 宣言の中の変数名などはソートしてくれないので、ESLint 本体の sort-imports を使う
-    // see: https://github.com/import-js/eslint-plugin-import/issues/1732#issuecomment-616246894
-    'sort-imports': ['error', { ignoreDeclarationSort: true }],
+    // `import` と `import type` を分ける
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      {
+        fixStyle: 'separate-type-imports',
+        prefer: 'type-imports',
+      },
+    ],
+
+    // `import type` を同一パスの `import` の上に配置する
+    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
   },
 };
 
