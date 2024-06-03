@@ -1,18 +1,17 @@
 /**
+ * プロジェクトルートに `.editorconfig` があれば、その設定が優先される。
+ * また、未指定時のデフォルト値は、以下のドキュメントに記載されている。
+ * {@link https://prettier.io/docs/en/options}
+ *
  * @type {import("eslint").Linter.Config}
  */
-module.exports = {
-  root: true,
-  /**
-   * 新たに config を追加する場合は、`prettier` よりも前に追加する。
-   */
+const config = {
+  root: "./",
   extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
     "prettier",
   ],
@@ -25,22 +24,40 @@ module.exports = {
     project: "./tsconfig.json",
   },
   plugins: [
-    'import', "@typescript-eslint", "react", "react-hooks", "jsx-a11y"
+    "@typescript-eslint",
+    "import",
+    "simple-import-sort",
+    "react",
+    "react-hooks",
+    "jsx-a11y",
   ],
   settings: {
-    "import/extensions": ['.js', '.jsx', '.ts', '.tsx'],
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
     "import/resolver": {
       typescript: true,
     },
   },
   rules: {
-    // import の順序を `["builtin", "external", "parent", "sibling", "index"]` の順序で並び替える
-    "import/order": "error",
+    // `eslint-plugin-import` よりも、広範囲かつ望ましいソートが可能な
+    // `eslint-plugin-simple-import-sort` で勧められている設定を指定
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
 
-    // NOTE: React v17 以降は新しい Transformer を利用しているならば、
-    // `import React from 'react'`が不要になるため、以下の2つのルールを `"off"` にしている
-    // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md#when-not-to-use-it
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+    // `import` と `import type` を分ける
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        fixStyle: "separate-type-imports",
+        prefer: "type-imports",
+      },
+    ],
+
+    // `import type` を同一パスの `import` の上に配置する
+    "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
   },
 };
+
+module.exports = config;

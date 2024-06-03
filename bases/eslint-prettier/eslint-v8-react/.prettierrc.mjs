@@ -5,9 +5,8 @@
  *
  * @type {import("prettier").Config}
  */
-module.exports = {
-  /**
-   * tailwindcss を利用しないプロジェクトでは、以下は削除する
-   */
-  plugins: ["prettier-plugin-tailwindcss"],
+const config = {
+  plugins: [],
 };
+
+export default config;
