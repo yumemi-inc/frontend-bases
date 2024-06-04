@@ -1,7 +1,5 @@
 {
   "extends": "@tsconfig/vite-react/tsconfig.json",
-  "compilerOptions": {
-    "allowJs": true
-  },
-  "include": ["./.eslintrc.cjs", "./.prettierrc.mjs", "./**/*.ts", "./**/*.tsx"]
+  "include": ["test"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
