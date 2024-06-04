@@ -2,12 +2,13 @@
   "type": "module",
   "scripts": {
     "next": "pnpx next@14",
-    "lint:eslint": "pnpm next lint",
-    "lint:prettier": "pnpm prettier --check .",
-    "lint": "concurrently --c 'auto' 'npm:lint:*'",
-    "fix:eslint": "pnpm lint:eslint --fix",
-    "fix:prettier": "pnpm prettier --write .",
-    "fix": "pnpm lint:eslint --fix && pnpm fix:prettier"
+    "check:tsc": "tsc --noEmit",
+    "check:eslint": "pnpx next lint",
+    "check:prettier": "prettier --check .",
+    "check": "concurrently --c 'auto' 'pnpm:check:*'",
+    "format:eslint": "pnpm check:eslint --fix",
+    "format:prettier": "pnpm prettier --write .",
+    "format": "pnpm format:eslint && pnpm format:prettier"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
