@@ -4,8 +4,9 @@
     "composite": true,
     "noEmit": true,
     "allowJs": true,
+    "allowSyntheticDefaultImports": true,
     "module": "ESNext",
     "moduleResolution": "bundler"
   },
-  "include": [".eslintrc.cjs", ".prettierrc.mjs"]
+  "include": [".eslintrc.cjs", ".prettierrc.mjs", "vite.config.mjs"]
 }
