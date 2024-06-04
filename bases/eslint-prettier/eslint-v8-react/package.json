@@ -1,7 +1,15 @@
 {
   "type": "module",
   "description": "ESLint v8 と Prettier を使用した React 向けの基本的な設定",
-  "scripts": {},
+  "scripts": {
+    "check:tsc": "tsc --noEmit",
+    "check:eslint": "eslint .",
+    "check:prettier": "prettier --check .",
+    "check": "concurrently --c 'auto' 'pnpm:check:*'",
+    "format:eslint": "pnpm check:eslint --fix",
+    "format:prettier": "pnpm prettier --write .",
+    "format": "pnpm format:eslint && pnpm format:prettier"
+  },
   "devDependencies": {
     "@tsconfig/node-lts": "^20.1.3",
     "@tsconfig/vite-react": "^3.0.2",
@@ -9,6 +17,7 @@
     "@types/node": "^20",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
     "@typescript-eslint/parser": "^7.8.0",
+    "concurrently": "^8.2.2",
     "eslint": "^8",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
