@@ -29,7 +29,11 @@ tsconfig.json ... `pnpm create next-app` 実行時に生成されたものと同
 JavaScript や、TypeScript の言語機能にフォーカスした設定がされていないため、
 `eslint` と、`typescript-eslint` が推奨する設定を追加しています。
 
-また、`eslint-plugin-import` の `import/order` rule を設定し、モジュールのインポート順序が揃うようにしています。
+他、以下の設定を追加しています。
+
+- `eslint-plugin-import` と `eslint-plugin-simple-import-sort` を利用して、`import` と `export` の順序矯正
+- `@typescript-eslint/consistent-type-imports` と `import/consistent-type-specifier-style` ルールを用いて、 型 の imoprt を `import type` で行うように矯正 
+- `eslint-plugin-tailwindcss` による、`className` の順序の矯正 
 
 > [!NOTE]
 >
@@ -47,9 +51,6 @@ JavaScript や、TypeScript の言語機能にフォーカスした設定がさ�
 ### Prettier
 
 [Prettier は EditorConfig の設定サポートしいる](https://prettier.io/docs/en/configuration.html#editorconfig)ため、その他の設定はデフォルトのままにしています。
-
-一点、tailwindcss を利用することを想定し、
-JSX の `className` の順序を強制するために [prettier-plugin-tailwindcss](https://www.npmjs.com/package/prettier-plugin-tailwindcss) を `plugins` に追加しています。
 
 ## 登録しているコマンド
 
