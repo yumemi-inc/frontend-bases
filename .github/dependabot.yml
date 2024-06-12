@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+      day: monday
+    open-pull-requests-limit: 5
+
+  # bases 内の依存を更新するための設定
+  # - package-ecosystem: npm
+  #   directories:
+  #     - bases/foo/bar # ここに対象ディレクトリを列挙
+  #   schedule:
+  #     interval: monthly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+

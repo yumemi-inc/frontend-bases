@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json",
+  "version": "0.2",
+  "language": "en",
+  "import": [
+    // 業界用語
+    "@cspell/dict-software-terms/cspell-ext.json",
+    "@cspell/dict-fullstack/cspell-ext.json",
+
+    // 利用するであろう、開発言語等の辞書
+    "@cspell/dict-html/cspell-ext.json",
+    "@cspell/dict-css/cspell-ext.json",
+    "@cspell/dict-typescript/cspell-ext.json",
+    "@cspell/dict-node/cspell-ext.json",
+    "@cspell/dict-npm/cspell-ext.json",
+
+    // CI 等で spell check をするなら以下の英語辞書も入れておいた方がよい
+    "@cspell/dict-en_us/cspell-ext.json",
+    "@cspell/dict-en-gb/cspell-ext.json"
+  ],
+
+  // チェックする必要のある単語が多い場合は、
+  "dictionaryDefinitions": [
+    {
+      "name": "custom",
+      "path": "./custom_dict.txt",
+      "description": "案件で利用する用語を定義"
+    }
+  ],
+  // Dictionaries to always be used.
+  // Generally left empty
+  "dictionaries": ["custom"],
+
+  // speck check 対象から除外するパスパターン
+  "ignorePaths": ["node_modules/**"]
+}
