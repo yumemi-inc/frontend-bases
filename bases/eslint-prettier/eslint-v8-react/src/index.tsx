@@ -3,7 +3,7 @@ import type { FC } from "react";
 const Child = () => {
   return (
     <div>
-      <img src="https://placehold.it/000/10x10.png" />
+      <img src="https://placehold.co/100x100.png" />
     </div>
   );
 };
