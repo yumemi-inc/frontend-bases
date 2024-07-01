@@ -11,7 +11,7 @@
     "@cspell/dict-node": "^5.0.1",
     "@cspell/dict-npm": "^5.0.15",
     "@cspell/dict-software-terms": "^3.3.20",
-    "@cspell/dict-typescript": "^3.1.4",
+    "@cspell/dict-typescript": "^3.1.5",
     "cspell": "^8.7.0"
   }
 }
