@@ -2,7 +2,7 @@
 	"name": "frontend-bases",
 	"license": "MIT",
 	"private": "true",
-	"packageManager": "pnpm@9.0.4+sha256.caa915eaae9d9aefccf50ee8aeda25a2f8684d8f9d5c6e367eaf176d97c1f89e",
+	"packageManager": "pnpm@9.5.0-beta.0+sha256.bd91cddc9b205c94b5bf0380cec8fc8e4b1dde7b8c5191732f3d4e73848e860e",
 	"dependencies": {
 		"@biomejs/biome": "^1.8.1"
 	}
