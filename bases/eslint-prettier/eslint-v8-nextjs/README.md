@@ -52,7 +52,7 @@ JavaScript や、TypeScript の言語機能にフォーカスした設定がさ�
 
 [Prettier は EditorConfig の設定サポートしいる](https://prettier.io/docs/en/configuration.html#editorconfig)ため、その他の設定はデフォルトのままにしています。
 
-## 登録しているコマンド
+## 登録している npm-scripts
 
 | 名称   | 概要                                                  |
 | ------ | ----------------------------------------------------- |
