@@ -2,7 +2,7 @@
 
 ## 概要
 
-eslint-plugin-react 2024/06/12時点では v9 に対応していないため、ESLint v8 の Legacy Config で利用できるものを用意しました。
+eslint-plugin-react が 2024/06/12時点では v9 に対応していないため、ESLint v8 の Legacy Config で利用できるものを用意しました。
 
 ## 構造
 
@@ -27,7 +27,7 @@ tsconfig.node.json ... Node.js を利用した開発ツール群の config フ�
 
 [Prettier は EditorConfig の設定サポートしいる](https://prettier.io/docs/en/configuration.html#editorconfig)ため、その他の設定はデフォルトのままにしています。
 
-## 登録しているコマンド
+## 登録している npm-scripts
 
 | 名称   | 概要                                                  |
 | ------ | ----------------------------------------------------- |
