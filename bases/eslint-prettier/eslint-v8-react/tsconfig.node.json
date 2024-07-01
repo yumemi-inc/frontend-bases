@@ -1,0 +1,11 @@
+{
+  "extends": "@tsconfig/node-lts/tsconfig.json",
+  "compilerOptions": {
+    "emitDeclarationOnly": true,
+    "composite": true,
+    "allowJs": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler"
+  },
+  "include": [".eslintrc.cjs", ".prettierrc.mjs", "vite.config.mjs"]
+}
