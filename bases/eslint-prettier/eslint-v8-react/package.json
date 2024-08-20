@@ -1,0 +1,39 @@
+{
+  "type": "module",
+  "description": "ESLint v8 と Prettier を使用した React 向けの基本的な設定",
+  "scripts": {
+    "check:tsc": "tsc --noEmit",
+    "check:eslint": "eslint .",
+    "check:prettier": "prettier --check .",
+    "check": "concurrently --c 'auto' 'pnpm:check:*'",
+    "format:eslint": "pnpm check:eslint --fix",
+    "format:prettier": "pnpm prettier --write .",
+    "format": "pnpm format:eslint && pnpm format:prettier"
+  },
+  "devDependencies": {
+    "@tsconfig/node-lts": "^20.1.3",
+    "@tsconfig/vite-react": "^3.0.2",
+    "@types/eslint": "^8.56.10",
+    "@types/node": "^20",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^8",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-n": "^17.7.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-simple-import-sort": "^12.1.0",
+    "eslint-plugin-tailwindcss": "^3.17.0",
+    "prettier": "^3.2.5"
+  },
+  "peerDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
