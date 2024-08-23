@@ -1,7 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-/* eslint-disable n/no-unpublished-import */
 import pluginJs from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
 import pluginImportX from "eslint-plugin-import-x";
@@ -39,22 +35,28 @@ export default tsEslint.config(
     },
   },
 
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
   pluginJs.configs.recommended,
 
   // ConfigArray なので spread で展開
   ...tsEslint.configs.recommendedTypeChecked,
 
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
   pluginReact.configs.flat.recommended,
 
   // jsx a11y
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
   pluginJsxA11y.flatConfigs.recommended,
 
   // tailwind
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
   ...pluginTailwind.configs["flat/recommended"],
 
   // eslint-plugin-react-hooks
   {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     plugins: { "react-hooks": pluginReactHooks },
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
     rules: pluginReactHooks.configs.recommended.rules,
   },
 
@@ -123,5 +125,6 @@ export default tsEslint.config(
   },
 
   // NOTE: flat config の一番最後に追加する必要がある。
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
   eslintConfigPrettier,
 );
