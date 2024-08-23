@@ -58,7 +58,8 @@ export default tsEslint.config(
     rules: pluginReactHooks.configs.recommended.rules,
   },
 
-  // eslint-plugin-import-x & eslint-plugin-simple-import-sort
+  // `import` 関連の設定
+  // `eslint-plugin-import` は v9 未対応なため、`eslint-plugin-import-x` を利用している
   {
     settings: {
       "import-x/extensions": [".js", ".jsx", ".ts", ".tsx"],
