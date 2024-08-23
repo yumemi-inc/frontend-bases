@@ -4,8 +4,9 @@
     "emitDeclarationOnly": true,
     "composite": true,
     "allowJs": true,
+    "resolveJsonModule": true,
     "module": "ESNext",
     "moduleResolution": "bundler"
   },
-  "include": [".eslintrc.cjs", ".prettierrc.mjs", "vite.config.mjs"]
+  "include": [".prettierrc.mjs", "vite.config.mjs", "eslint.config.mjs"]
 }
