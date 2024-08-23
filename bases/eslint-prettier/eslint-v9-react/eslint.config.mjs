@@ -111,6 +111,10 @@ export default tsEslint.config(
         project: "./tsconfig.node.json",
       },
     },
+    "import-x/resolver": {
+      typescript: true,
+      node: true,
+    },
     plugins: { n: pluginNode },
     rules: pluginNode.configs["flat/recommended-script"].rules,
   },
