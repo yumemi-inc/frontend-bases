@@ -7,12 +7,13 @@ const config = {
    */
   extends: [
     "eslint:recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "next/core-web-vitals",
+    // @next/eslint-plugin-import 内部で `plugins` に指定されている eslint-plugin-import と conflict しないように eslint-plugin-import 関連の config は後に指定
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     // tailwindcss を利用しないプロジェクトでは、以下は削除する
     "plugin:tailwindcss/recommended",
-    "next/core-web-vitals",
     "prettier",
   ],
   parser: "@typescript-eslint/parser",
