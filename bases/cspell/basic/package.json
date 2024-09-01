@@ -5,7 +5,7 @@
   },
   "devDependencies": {
     "@cspell/dict-css": "^4.0.12",
-    "@cspell/dict-en-gb": "^4.1.39",
+    "@cspell/dict-en-gb": "^4.1.46",
     "@cspell/dict-en_us": "^4.3.23",
     "@cspell/dict-fullstack": "^3.1.5",
     "@cspell/dict-node": "^5.0.1",
