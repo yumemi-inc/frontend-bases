@@ -1,6 +1,11 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
+  - package-ecosystem: npm
     directory: /
     schedule:
       interval: daily
+    groups:
+      typescript-eslint:
+        patterns:
+          - "@typescript-eslint/*"
+
