@@ -1,6 +1,6 @@
 import pluginJs from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
-import pluginImportX from "eslint-plugin-import-x";
+import pluginImport from "eslint-plugin-import";
 import pluginJsxA11y from "eslint-plugin-jsx-a11y";
 import pluginNode from "eslint-plugin-n";
 import pluginReact from "eslint-plugin-react";
@@ -60,32 +60,31 @@ export default tsEslint.config(
     rules: pluginReactHooks.configs.recommended.rules,
   },
 
-  // `import` 関連の設定
-  // `eslint-plugin-import` は v9 未対応なため、`eslint-plugin-import-x` を利用している
+  // `eslint-plugin-import` を有効化
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  { plugins: { import: pluginImport } },
+
+  // eslint-plugin-import を利用するための config を追加
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
+  pluginImport.flatConfigs.typescript,
+
+  // import 関連の追加の設定
   {
-    settings: {
-      "import-x/extensions": [".js", ".jsx", ".ts", ".tsx"],
-      "import-x/resolver": {
-        typescript: true,
-      },
-    },
     plugins: {
-      "import-x": pluginImportX,
       "simple-import-sort": pluginSimpleImportSort,
     },
     rules: {
-      ...pluginImportX.configs.typescript.rules,
       // `eslint-plugin-import` よりも、広範囲かつ望ましいソートが可能な
       // `eslint-plugin-simple-import-sort` で勧められている設定を指定
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
-      "import-x/first": "error",
+      "import/first": "error",
       // NOTE: "import/newline-after-import" は ESLint v9 に未対応
       // "import/newline-after-import": "error",
-      "import-x/no-duplicates": "error",
+      "import/no-duplicates": "error",
 
       // `import type` を同一パスの `import` の上に配置する
-      "import-x/consistent-type-specifier-style": ["error", "prefer-top-level"],
+      "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
 
       // `import` と `import type` を分ける
       "@typescript-eslint/consistent-type-imports": [
@@ -111,9 +110,11 @@ export default tsEslint.config(
         project: "./tsconfig.node.json",
       },
     },
-    "import-x/resolver": {
-      typescript: true,
-      node: true,
+    settings: {
+      "import/resolver": {
+        typescript: true,
+        node: true,
+      },
     },
     plugins: { n: pluginNode },
     rules: pluginNode.configs["flat/recommended-script"].rules,
