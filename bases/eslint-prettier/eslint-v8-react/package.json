@@ -15,7 +15,7 @@
     "@tsconfig/vite-react": "^3.0.2",
     "@types/eslint": "^8.56.10",
     "@types/node": "^20",
-    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
     "@typescript-eslint/parser": "^7.8.0",
     "concurrently": "^8.2.2",
     "eslint": "^8",
