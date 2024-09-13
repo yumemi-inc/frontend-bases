@@ -1,19 +1,19 @@
 {
-	"$schema": "node_modules/@biomejs/biome/configuration_schema.json",
-	"files": {
-		"include": ["*", "**/*"],
-		"ignore": [],
-		"ignoreUnknown": true
-	},
-	"vcs": {
-		"enabled": true,
-		"clientKind": "git",
-		"defaultBranch": "main",
-		"root": ".",
-		"useIgnoreFile": true
-	},
-	"formatter": {
-		"useEditorconfig": true
-	},
-	"linter": {}
+  "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "include": ["*", "**/*"],
+    "ignore": [],
+    "ignoreUnknown": true
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "defaultBranch": "main",
+    "root": ".",
+    "useIgnoreFile": true
+  },
+  "formatter": {
+    "useEditorconfig": true
+  },
+  "linter": {}
 }
