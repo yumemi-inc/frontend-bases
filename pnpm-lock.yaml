@@ -18,8 +18,8 @@ importers:
         specifier: ^4.0.12
         version: 4.0.12
       '@cspell/dict-en-gb':
-        specifier: ^4.1.39
-        version: 4.1.39
+        specifier: ^4.1.46
+        version: 4.1.46
       '@cspell/dict-en_us':
         specifier: ^4.3.23
         version: 4.3.23
@@ -143,7 +143,7 @@ importers:
         version: 12.1.0(eslint@8.57.0)
       eslint-plugin-tailwindcss:
         specifier: ^3.17.0
-        version: 3.17.0(tailwindcss@3.4.3)
+        version: 3.17.4(tailwindcss@3.4.3)
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -283,8 +283,8 @@ packages:
   '@cspell/dict-en-gb@1.1.33':
     resolution: {integrity: sha512-tKSSUf9BJEV+GJQAYGw5e+ouhEe2ZXE620S7BLKe3ZmpnjlNG9JqlnaBhkIMxKnNFkLY2BP/EARzw31AZnOv4g==}
 
-  '@cspell/dict-en-gb@4.1.39':
-    resolution: {integrity: sha512-pqMNob7DGub713B3Yb0YqTzf3h6VjGy+n8NLjXzgVnRup67c6eLErxvdAM3Wrb/0RuDhOu0MyIrMQHRZMw9w4w==}
+  '@cspell/dict-en-gb@4.1.46':
+    resolution: {integrity: sha512-CnM8Iqs11y/D7X0KsW0XPLZjhP0AkPnLCEQiwTIb8maTt5X+3TUw9jBYrw7sP4Yvls7JrqXTYyappmeLTl4b2A==}
 
   '@cspell/dict-en_us@4.3.23':
     resolution: {integrity: sha512-l0SoEQBsi3zDSl3OuL4/apBkxjuj4hLIg/oy6+gZ7LWh03rKdF6VNtSZNXWAmMY+pmb1cGA3ouleTiJIglbsIg==}
@@ -2328,7 +2328,7 @@ snapshots:
 
   '@cspell/dict-en-gb@1.1.33': {}
 
-  '@cspell/dict-en-gb@4.1.39': {}
+  '@cspell/dict-en-gb@4.1.46': {}
 
   '@cspell/dict-en_us@4.3.23': {}
 
