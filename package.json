@@ -4,6 +4,6 @@
   "private": "true",
   "packageManager": "pnpm@9.5.0-beta.0+sha256.bd91cddc9b205c94b5bf0380cec8fc8e4b1dde7b8c5191732f3d4e73848e860e",
   "dependencies": {
-    "@biomejs/biome": "^1.9.0"
+    "@biomejs/biome": "^1.9.2"
   }
 }
