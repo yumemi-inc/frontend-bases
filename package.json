@@ -1,9 +1,9 @@
 {
-	"name": "frontend-bases",
-	"license": "MIT",
-	"private": "true",
-	"packageManager": "pnpm@9.5.0-beta.0+sha256.bd91cddc9b205c94b5bf0380cec8fc8e4b1dde7b8c5191732f3d4e73848e860e",
-	"dependencies": {
-		"@biomejs/biome": "^1.8.1"
-	}
+  "name": "frontend-bases",
+  "license": "MIT",
+  "private": "true",
+  "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b",
+  "dependencies": {
+    "@biomejs/biome": "^1.9.2"
+  }
 }
