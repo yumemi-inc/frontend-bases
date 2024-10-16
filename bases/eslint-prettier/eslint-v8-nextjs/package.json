@@ -1,9 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "next": "pnpx next@14",
     "check:tsc": "tsc --noEmit",
-    "check:eslint": "pnpx next lint",
+    "check:eslint": "pnpm next lint",
     "check:prettier": "prettier --check .",
     "check": "concurrently --c 'auto' 'pnpm:check:*'",
     "format:eslint": "pnpm check:eslint --fix",

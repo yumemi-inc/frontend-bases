@@ -6,12 +6,11 @@
 
 ## 構成
 
-
 ```txt
 bases/
   [tools]/
     [use-case]/
-      tests/
+      src/
       package.json
       README.md
 ```
@@ -26,7 +25,7 @@ bases/
 ユースケース毎のコンフィグを配置する。
 `[use-case]` は、ユースケースに合わせた名称を半角英数と `-` で記載する。
 
-### `bases/[tools]/[use-case]/tests/`
+### `bases/[tools]/[use-case]/src/`
 
 利用するツールのコンフィグを検証するためのコードを配置する。
 
