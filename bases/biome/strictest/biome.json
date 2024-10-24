@@ -13,7 +13,7 @@
     "useIgnoreFile": true
   },
   "formatter": {
-    "indentStyle": "space"
+    "useEditorconfig": true
   },
   "linter": {
     "rules": {
